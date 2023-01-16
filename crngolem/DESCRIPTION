@@ -11,3 +11,21 @@ Imports:
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.2.3
+Suggests: 
+    dplyr,
+    future,
+    glue,
+    highcharter,
+    httr,
+    knitr,
+    lubridate,
+    promises,
+    purrr,
+    rmarkdown,
+    shinycssloaders,
+    shinyWidgets,
+    sparkline,
+    testthat (>= 3.0.0),
+    visNetwork
+Config/testthat/edition: 3
+VignetteBuilder: knitr
