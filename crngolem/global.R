@@ -27,11 +27,11 @@ plan(multiprocess)
 
 # Global constants --------------------------------------------------------
 
-S3_DATA_PACKAGE <- "https://s3.amazonaws.com/cran-explorer/data.zip"
-
-S3_PKG_DEPENDENCIES <- "https://s3.amazonaws.com/cran-explorer/pkg_dependencies.csv"
-S3_PKG_RELEASES <- "https://s3.amazonaws.com/cran-explorer/pkg_releases.csv"
-S3_TILE_SUMMARIES <- "https://s3.amazonaws.com/cran-explorer/tile_summary.rds"
+# S3_DATA_PACKAGE <- "https://s3.amazonaws.com/cran-explorer/data.zip"
+#
+# S3_PKG_DEPENDENCIES <- "https://s3.amazonaws.com/cran-explorer/pkg_dependencies.csv"
+# S3_PKG_RELEASES <- "https://s3.amazonaws.com/cran-explorer/pkg_releases.csv"
+# S3_TILE_SUMMARIES <- "https://s3.amazonaws.com/cran-explorer/tile_summary.rds"
 
 
 

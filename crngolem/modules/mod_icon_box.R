@@ -8,7 +8,7 @@
 
 # Module constants --------------------------------------------------------
 
-F_ICON_BOX_TEMPLATE <- "www/modules/icon_box/index.html"
+F_ICON_BOX_TEMPLATE <- "inst/app/www/modules/icon_box/index.html"
 
 
 # Module UI ---------------------------------------------------------------
@@ -19,7 +19,7 @@ icon_box_ui <- function(id, title, icon = "glyphicon-time") {
   htmlTemplate(
     filename = F_ICON_BOX_TEMPLATE,
     value = textOutput(ns("value"), inline = TRUE),
-    title = title, 
+    title = title,
     icon = icon
   )
 }
@@ -29,13 +29,13 @@ icon_box_ui <- function(id, title, icon = "glyphicon-time") {
 # Module logic ------------------------------------------------------------
 
 icon_box <- function(input, output, session, value) {
-  
+
   box_values <- reactiveValues(
     value = value
   )
 
   output$value <- renderText(box_values$value)
-  
+
   list(
     set_values = function(value) {
       box_values$value <- value
