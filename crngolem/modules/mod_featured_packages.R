@@ -78,7 +78,7 @@ featured_packages <- function(input, output, session, d_pkg_releases, d_pkg_depe
           active_class = ifelse(x$first, "active", "")
         )
       }),
-      tags$script(src = "inst/app/js/main.js")
+      tags$script(src = "inst/app/www/js/main.js")
     )
   }
 
