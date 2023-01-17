@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'themify';
-	src:url('../inst/app/www/themify.eot?-fvbane');
-	src:url('../inst/app/www/themify.eot?#iefix-fvbane') format('embedded-opentype'),
-		url('../inst/app/www/themify.woff?-fvbane') format('woff'),
-		url('../inst/app/www/themify.ttf?-fvbane') format('truetype'),
-		url('../inst/app/www/themify.svg?-fvbane#themify') format('svg');
+	src:url('../app/www/themify.eot?-fvbane');
+	src:url('../app/www/themify.eot?#iefix-fvbane') format('embedded-opentype'),
+		url('../app/www/themify.woff?-fvbane') format('woff'),
+		url('../app/www/themify.ttf?-fvbane') format('truetype'),
+		url('../app/www/themify.svg?-fvbane#themify') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }

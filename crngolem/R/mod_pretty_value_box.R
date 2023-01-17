@@ -8,7 +8,7 @@
 
 # Module constants --------------------------------------------------------
 
-F_PRETTY_VALUE_BOX_TEMPLATE <- "inst/app/www/pretty_value_box_index.html"
+F_PRETTY_VALUE_BOX_TEMPLATE <- "inst/app/www/pretty_val_box_index.html"
 
 
 # Module UI ---------------------------------------------------------------
