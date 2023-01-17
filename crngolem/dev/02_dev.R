@@ -30,10 +30,33 @@ golem::add_utils("helpers", with_test = TRUE)
 
 ## External resources
 ## Creates .js and .css files at inst/app/www
-golem::add_js_file("script")
+golem::add_js_file("contact-form.js")
+golem::add_js_file("jquery.parallax-1.1.3.js")
+golem::add_js_file("magnific-popup.min.js")
+golem::add_js_file("modernizr-2.8.3.min.js")
+golem::add_js_file("owl.carousel.min.js")
+golem::add_js_file("script.js")
+golem::add_js_file("scrollUp.min.js")
+golem::add_js_file("vendor_bootstrap.min.js")
+golem::add_js_file("vendor_modernizr-2.8.3.min.js")
+golem::add_js_file("wow.min.js")
+
+
 golem::add_js_handler("handlers")
-golem::add_css_file("custom")
-golem::add_sass_file("custom")
+
+
+golem::add_css_file("animate.css")
+golem::add_css_file("bootstrap.min.css")
+golem::add_css_file("magnific-popup.css")
+golem::add_css_file("normalize.css")
+golem::add_css_file("owl.carousel.min.css")
+golem::add_css_file("pretty_val_box_style.css")
+golem::add_css_file("responsive.css")
+golem::add_css_file("style.css")
+golem::add_css_file("themify-icons.css")
+
+
+
 
 ## Add internal datasets ----
 ## If you have data in your package
