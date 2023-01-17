@@ -58,7 +58,7 @@ featured_packages <- function(input, output, session, d_pkg_releases, d_pkg_depe
     l_featured_packages <- split(d_featured_packages(), seq(nrow(d_featured_packages())))
 
     htmlTemplate(
-      filename = "inst/app/www/modules/featured_packages/index.html",
+      filename = "www/featured_packages_index.html",
       items = package_items_ui(l_featured_packages),
       captions = package_captions_ui(l_featured_packages)
     )
@@ -68,7 +68,7 @@ featured_packages <- function(input, output, session, d_pkg_releases, d_pkg_depe
     tagList(
       lapply(l_featured_packages, function(x) {
         htmlTemplate(
-          filename = "inst/app/www/modules/featured_packages/item.html",
+          filename = "www/featured_packages_index_item.html",
           package = x$dependency,
           title = x$title,
           published = strftime(x$published, "%Y-%m-%d"),
@@ -78,7 +78,7 @@ featured_packages <- function(input, output, session, d_pkg_releases, d_pkg_depe
           active_class = ifelse(x$first, "active", "")
         )
       }),
-      tags$script(src = "inst/app/www/js/main.js")
+      tags$script(src = "www/main.js")
     )
   }
 
@@ -86,7 +86,7 @@ featured_packages <- function(input, output, session, d_pkg_releases, d_pkg_depe
     tagList(
       lapply(l_featured_packages, function(x) {
         htmlTemplate(
-          filename = "inst/app/www/modules/featured_packages/caption.html",
+          filename = "www/featured_packages_caption.html",
           package = x$dependency,
           slide = x$slide - 1,
           published = strftime(x$published, "%Y-%m-%d"),
