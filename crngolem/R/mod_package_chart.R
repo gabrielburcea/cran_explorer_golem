@@ -13,7 +13,7 @@ package_chart_ui <- function(id) {
   ns <- NS(id)
 
   htmlTemplate(
-    filename = "inst/app/www/modules/package_chart/index.html",
+    filename = "inst/app/www/package_chart_index.html",
     switch_new_updated = shinyWidgets::switchInput(
       ns("switch_new_updated"),
       label = "Packages",

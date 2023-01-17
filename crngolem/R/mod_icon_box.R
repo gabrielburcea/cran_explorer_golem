@@ -8,7 +8,7 @@
 
 # Module constants --------------------------------------------------------
 
-F_ICON_BOX_TEMPLATE <- "inst/app/www/modules/icon_box/index.html"
+F_ICON_BOX_TEMPLATE <- "inst/app/www/icon_box_index.html"
 
 
 # Module UI ---------------------------------------------------------------
