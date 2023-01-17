@@ -13,6 +13,16 @@ F_PRETTY_VALUE_BOX_TEMPLATE <- "inst/app/www/pretty_value_box_index.html"
 
 # Module UI ---------------------------------------------------------------
 
+#' pretty_value_box_ui
+#'
+#' @param id
+#' @param background_color
+#' @param icon_name
+#'
+#' @return
+#' @export
+#'
+#' @examples
 pretty_value_box_ui <- function(id, background_color = "#e2a267", icon_name = "question-circle") {
   # define namespace function
   ns <- NS(id)
@@ -37,6 +47,24 @@ pretty_value_box_ui <- function(id, background_color = "#e2a267", icon_name = "q
 
 # Module server logic -----------------------------------------------------
 
+#' pretty_value_box
+#'
+#' @param input
+#' @param output
+#' @param session
+#' @param title
+#' @param value
+#' @param last_days
+#' @param date_range
+#' @param inline_bar
+#' @param trend
+#' @param trend_icon
+#' @param trend_label
+#'
+#' @return
+#' @export
+#'
+#' @examples
 pretty_value_box <- function(input, output, session,
                              title = "-", value = 0, last_days = "-", date_range = "-", inline_bar = 0,
                              trend = 0, trend_icon = "", trend_label = "-") {

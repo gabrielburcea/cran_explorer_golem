@@ -15,6 +15,14 @@ ROWS_PER_PAGE <- 15
 
 # UI of the module --------------------------------------------------------
 
+#' graph_network_ui
+#'
+#' @param id
+#'
+#' @return
+#' @export
+#'
+#' @examples
 graph_network_ui <- function(id) {
   ns <- NS(id)
 
@@ -85,6 +93,19 @@ graph_network_ui <- function(id) {
 
 # Server logic of the module ----------------------------------------------
 
+#' graph_network
+#'
+#' @param input
+#' @param output
+#' @param session
+#' @param d_pkg_dependencies
+#' @param d_pkg_details
+#' @param d_pkg_releases
+#'
+#' @return
+#' @export
+#'
+#' @examples
 graph_network <- function(input, output, session, d_pkg_dependencies, d_pkg_details, d_pkg_releases) {
   ns <- session$ns
 

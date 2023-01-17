@@ -9,6 +9,14 @@
 
 # Module UI ---------------------------------------------------------------
 
+#' featured_packages_ui
+#'
+#' @param id
+#'
+#' @return
+#' @export
+#'
+#' @examples
 featured_packages_ui <- function(id) {
   ns <- NS(id)
 
@@ -19,6 +27,19 @@ featured_packages_ui <- function(id) {
 
 # Module server logic -----------------------------------------------------
 
+#' featured_packages
+#'
+#' @param input
+#' @param output
+#' @param session
+#' @param d_pkg_releases
+#' @param d_pkg_dependencies
+#' @param d_pkg_details
+#'
+#' @return
+#' @export
+#'
+#' @examples
 featured_packages <- function(input, output, session, d_pkg_releases, d_pkg_dependencies, d_pkg_details) {
 
 

@@ -9,6 +9,14 @@
 
 # Module UI ---------------------------------------------------------------
 
+#' package_chart_ui
+#'
+#' @param id
+#'
+#' @return
+#' @export
+#'
+#' @examples
 package_chart_ui <- function(id) {
   ns <- NS(id)
 
@@ -30,6 +38,17 @@ package_chart_ui <- function(id) {
 
 # Server logic ------------------------------------------------------------
 
+#' package_chart
+#'
+#' @param input
+#' @param output
+#' @param session
+#' @param d_pkg_releases
+#'
+#' @return
+#' @export
+#'
+#' @examples
 package_chart <- function(input, output, session, d_pkg_releases) {
   ns <- session$ns
 

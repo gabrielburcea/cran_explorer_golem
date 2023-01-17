@@ -13,6 +13,16 @@ F_ICON_BOX_TEMPLATE <- "inst/app/www/icon_box_index.html"
 
 # Module UI ---------------------------------------------------------------
 
+#' icon_box_ui
+#'
+#' @param id
+#' @param title
+#' @param icon
+#'
+#' @return
+#' @export
+#'
+#' @examples
 icon_box_ui <- function(id, title, icon = "glyphicon-time") {
   ns <- NS(id)
 
@@ -28,6 +38,17 @@ icon_box_ui <- function(id, title, icon = "glyphicon-time") {
 
 # Module logic ------------------------------------------------------------
 
+#' icon_box
+#'
+#' @param input
+#' @param output
+#' @param session
+#' @param value
+#'
+#' @return
+#' @export
+#'
+#' @examples
 icon_box <- function(input, output, session, value) {
 
   box_values <- reactiveValues(
