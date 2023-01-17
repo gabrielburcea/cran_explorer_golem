@@ -12,7 +12,7 @@
 featured_packages_ui <- function(id) {
   ns <- NS(id)
 
-  uiOutput(ns("module_ui")) %>% withSpinner()
+  uiOutput(ns("module_ui")) %>% shinycssloaders::withSpinner()
 }
 
 

@@ -10,14 +10,14 @@ app_ui <- function(request) {
     golem_add_external_resources(),
     # Your application UI logic
     htmlTemplate(
-      filename = "www/index.html",
+      filename = "inst/app/www/index.html",
       box_packages_new_month = pretty_value_box_ui("packages-new-month", icon_name = "cubes"),
       box_packages_updated_month = pretty_value_box_ui("packages-updated-month", background_color = "#7ab885", icon_name = "cubes"),
 
       box_packages_new_year = pretty_value_box_ui("packages-new-year", icon_name = "cubes"),
       box_packages_updated_year = pretty_value_box_ui("packages-updated-year", background_color = "#7ab885", icon_name = "cubes"),
 
-      header_ui = uiOutput("header_ui") %>% withSpinner(size = 0.5, proxy.height = "50px", type = 6, color = "#FFFFFF"),
+      header_ui = uiOutput("header_ui") %>% shinycssloaders::withSpinner(size = 0.5, proxy.height = "50px", type = 6, color = "#FFFFFF"),
 
       package_chart = package_chart_ui("package_chart"),
 

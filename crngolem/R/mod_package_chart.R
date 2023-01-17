@@ -14,15 +14,15 @@ package_chart_ui <- function(id) {
 
   htmlTemplate(
     filename = "inst/app/www/modules/package_chart/index.html",
-    switch_new_updated = switchInput(
+    switch_new_updated = shinyWidgets::switchInput(
       ns("switch_new_updated"),
       label = "Packages",
       onLabel = "New", offLabel = "Updated",
       onStatus = "success", offStatus = "danger",
       value = TRUE, size = "mini"
     ),
-    chart_packages = highchartOutput(ns("chart_packages"), width = "100%", height = "300px") %>%
-      withSpinner(size = 0.5, proxy.height = "300px", type = 6, color = "#FFFFFF")
+    chart_packages = highcharter::highchartOutput(ns("chart_packages"), width = "100%", height = "300px") %>%
+      shinycssloaders::withSpinner(size = 0.5, proxy.height = "300px", type = 6, color = "#FFFFFF")
   )
 }
 
